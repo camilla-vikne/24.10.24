@@ -3,10 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24.10.24</title>
+    <title>Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form>
+        <fieldset>
+            <legend>Your information</legend>
+            <label for="fname">First name</label> 
+            <input type="text" name="name" id="fname">
+             <label for="lname">Last name</label>
+             <input type="text" name="name" id="lname">
+             <label for="range">How old are you?</label>
+             <input type="range" name="range" id="range" min="18" max="100">
+             <label for="birthday">Select your date of birth</label>
+             <input type="date" name="birthday" id="birthday" min="now" max="2024-12-31">
+             <label for="mail">Email</label>
+             <input type="email" name="name" id="email">
+             <label for="password">Password</label>
+             <input type="password" name="name" id="password">
+             <label for="number">Phone number</label>
+             <input type="tel" name="number" id="number" pattern="[0-9]{8}" required />
+             <input type="submit" value="Submit">
+             <input type="reset" value="Reset">
+        </fieldset>
+        </form>
+     <form>
+        <label for="cars">Pick a car</label>
+        <br>
+        <select name="cars" id="cars">
+            <option value="blank">--</option>
+            <option value="volvo">Volvo</option>
+            <option value="ford">Ford</option>
+            <option value="subaru">Subaru</option>
+            <option value="hyundai">Hyundai</option>
+        </select>
+        <br>
+        <label for="textarea">This is a text area</label>
+        <br>
+        <textarea name="textarea" id="textarea" rows="10" cols="40">Type in some text here</textarea>
+        <br>
+        <button>Select</button>
+    </form>
+    <form>
+      
+        <label for="radio">Pick an animal</label>
     
+        <input type="radio" name="radio" id="cat" value="Cat">
+        <label for="cat">Cat</label>
+        
+        <input type="radio" name="radio" id="dog" value="Dog">
+        <label for="dog">Dog</label>
+        
+        <input type="radio" name="radio" id="turtle" value="Turtle">
+        <label for="turtle">Turtle</label>
+
+    </form>
+    <form>
+        <label for="check">Pick a color</label>
+        <br>
+        <input type="checkbox" name="check" id="red">
+        <label for="red">Red</label>
+        <br>
+        <input type="checkbox" name="check" id="blue">
+        <label for="blue">Blue</label>
+        <br>
+        <input type="checkbox" name="check" id="green">
+        <label for="green">Green</label>
+        <br>
+        <input type="checkbox" name="check" id="yellow">
+        <label for="yellow">Yellow</label>
+        <br><br>
+        <label for="color">Or pick a color from the color picker</label>
+        <br>
+        <input type="color" name="color" id="colorpicker">
+        <input type="submit" value="Submit color">
+    
+    </form>
+    <form>
+        <label for="file">Upload a file</label>
+        <br>
+        <input type="file" name="file" id="file">
+        <input type="submit" value="Submit file">
+    </form>
 </body>
 </html>

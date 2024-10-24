@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+input, button, textarea, select {
+    font: inherit;
+}
